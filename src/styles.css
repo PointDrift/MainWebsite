@@ -1,38 +1,115 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: white;
+  height: 100vh;
+  background-color: black;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.brandName{
+  font-family: "OrkneyRegular";
+  font-size: x-large;
+}
+
+h1 {
+  font-family: "OrkneyRegular";
+  max-width: 50%;
+  font-size: 50px;
+  text-align: left;
+  padding-left: 50px;
+  animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530);
+}
+
+.container {
+  margin: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  color: white;
+  position: sticky;
+  top: 0;
+  font-family: "OrkneyRegular";
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  text-align: center;
+  padding-left: 50px;
+}
+
+.nav ul {
+  text-align: center;
+  margin: 0;
+  list-style: none;
+  gap: 1rem;
+  display: flex;
+  padding: 24px 10px;
+
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: .25rem;
+}
+
+.nav li.active {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav li {
+  transition: 0.4s;
+  color: grey;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 24px 10px;
+  margin: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav li:hover {
+  background-color: rgba(232, 236, 241, 0.3);
 }
+
+.waitlistButton {
+  font-family: "OrkneyRegular";
+  color: lightgrey;
+  outline: 0;
+  background: none;
+  font-size: 25px;
+  border-radius: 5px;
+  border: 2px solid white;
+  align-items: center;
+
+  z-index: 3;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  padding: 0 25px;
+  height: 48px;
+  transition: 0.5s;
+}
+
+.waitlistButton:hover {
+  color: white;
+  box-shadow: 0 0 26px #28C8EC;
+}
+
+.scrollDown{
+  position: relative;
+  text-align: center;
+  margin-top: 100px;
+  align-items: center;
+  animation: updown 0.5s infinite alternate;
+}
+
+
