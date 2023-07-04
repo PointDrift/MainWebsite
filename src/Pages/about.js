@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../linkedInLogo.png";
+import logo from "../LI-In-Bug.png";
 
 function About() {
     return (
