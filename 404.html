@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta
+            name="description"
+            content="404 error page"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png"/>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/orkney" type="text/css"/>
+    <title>404 error</title>
+</head>
+<style>
+    .errorContainer{
+        margin-top: 50%;
+        padding-top: 100px;
+        display: table-cell;
+        text-align: center;
+        align-content: center;
+        align-self: center;
+        vertical-align: middle;
+        position: absolute;
+    }
+    .logoError{
+        position: relative;
+        height: 80px;
+        width: 80px;
+        background-color: #DD907F;
+        justify-content: center;
+        border-radius: 50%;
+        display: inline-block;
+        animation: logoBob 1s cubic-bezier(.5, .15, .5, .86) infinite alternate;
+    }
+    @keyframes logoBob {
+        from {
+            top: -10px;
+        }
+        to {
+            top: 20px
+        }
+    }
+    .textNumber{
+        color: white;
+        font-size: 100px;
+        display:inline-block;
+        box-sizing: border-box;
+        font-family: OrkneyRegular
+    }
+    .backButton{
+        font-family: "OrkneyRegular";
+        position: relative;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: lightgrey;
+        outline: 0;
+        background: none;
+        font-size: 25px;
+        border-radius: 5px;
+        border: 2px solid white;
+        margin: auto;
+
+        z-index: 3;
+        height: 48px;
+        transition: 0.5s;
+    }
+    .backButton:hover {
+        color: white;
+        box-shadow: 0 0 26px #EC5328;
+    }
+    .warningText{
+        color: white;
+        font-size: 50px;
+        font-family: OrkneyRegular
+    }
+</style>
+<body style="background-color: black; height: 100vh; position: relative">
+
+<div style="display: flex; justify-content: center; vertical-align: center; position: relative">
+<div class="errorContainer">
+    <h1 class="textNumber">4</h1>
+    <div class="logoError"></div>
+    <h1 class="textNumber">4</h1>
+</div>
+    <div>
+        <h1 class="warningText">
+            Hey! Nothing here!
+        </h1>
+        <a href="/" style="text-decoration: none">
+            <h1 class="backButton">
+                Take me back!
+            </h1>
+        </a>
+    </div>
+</div>
+</body>
+</html>
