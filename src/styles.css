@@ -15,12 +15,13 @@ body {
 }
 
 .brandName{
-  font-family: "OrkneyRegular";
+  font-family: "Raleway";
   font-size: x-large;
+  padding-left: 15px;
 }
 
 h1 {
-  font-family: "OrkneyRegular";
+  font-family: "Raleway";
   max-width: 50%;
   font-size: 50px;
   text-align: left;
@@ -39,7 +40,7 @@ h1 {
   color: white;
   position: sticky;
   top: 0;
-  font-family: "OrkneyRegular";
+  font-family: "Raleway";
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -84,7 +85,7 @@ h1 {
 }
 
 .waitlistButton {
-  font-family: "OrkneyRegular";
+  font-family: "Raleway";
   color: lightgrey;
   outline: 0;
   background: none;
