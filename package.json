@@ -1,7 +1,7 @@
 {
   "name": "pointdrift",
   "version": "0.1.0",
-  "homepage": "https://github.com/PointDrift/",
+  "homepage": "https://github.com/PointDrift/MainWebsite",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
