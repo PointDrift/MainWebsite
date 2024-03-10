@@ -8,7 +8,7 @@ import {Route, Routes} from "react-router-dom"
 function App() {
   return (
       <>
-        <div style={{position:"sticky"}}>
+        <div style={{position:"sticky",width:"fit-content"}}>
           <Navbar/>
           <div className="container">
             <Routes>
@@ -19,7 +19,6 @@ function App() {
             </Routes>
           </div>
         </div>
-
       </>
   )
 }

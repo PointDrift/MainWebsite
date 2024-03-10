@@ -12,7 +12,9 @@ export default function Navbar() {
                     <div className={"pointShadow"} style={{position:"absolute"}}></div>
                 </div>
             </Link>
-            <ul>
+            <ul style={{
+                justifyContent:"space-evenly"
+            }}>
                 <div>
                     <CustomLink to="/product">Pricing</CustomLink>
                 </div>

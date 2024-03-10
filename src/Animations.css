@@ -69,7 +69,7 @@
 
 /*404 error text shake*/
 .errorText{
-  font-family: "Fira Mono";
+  font-family: "Fira Mono", serif;
   animation: vibrate 0.3s linear infinite both;
   align-self: center;
 }
@@ -94,27 +94,6 @@
   }
 }
 
-/*not used*/
-@keyframes blobulate {
-  0%,
-  100% {
-    border-radius: 33% 67% 70% 30% / 30% 40% 70% 70%;
-  }
-  20% {
-    border-radius: 37% 63% 51% 49% / 37% 35% 35% 63%;
-  }
-  40% {
-    border-radius: 36% 64% 64% 36% / 64% 48% 52% 26%;
-  }
-  60% {
-    border-radius: 37% 63% 51% 49% / 30% 30% 70% 73%;
-  }
-  80% {
-    border-radius: 40% 60% 42% 58% / 51% 51% 49% 59%;
-  }
-}
-
-/*wave animation*/
 .wave,
 .wave::before,
 .wave::after {
